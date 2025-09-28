@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="utf-8" />
+  <title>sadaka jariya -Home  </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- optional page overlay (keeps text readable on bright images) -->
+  <div class="page-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="logo" aria-hidden="false">
+          <span class="dot" aria-hidden="true"></span>
+           صدقة جارية لأشخاص
+        </div>
+
+            
+        
+        <div class="nav-links" role="navigation" aria-label="Site links" style="display:flex;align-items:center;gap:10px;">
+          <!-- Search Bar -->
+          <input type="text" id="searchInput" placeholder="🔎    جرب اكتب 123456
+
+                 style="padding:6px 10px;border:1px solid #ccc;border-radius:6px;">
+          <button onclick="searchSite()" 
+                  style="padding:6px 12px;border:none;border-radius:6px;background:#0b8457;color:#fff;cursor:pointer;">
+            بحث
+          </button>
+
+          <!-- Home Link -->
+          <a href="index.html" class="active">Home</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container" id="content">
+    <!-- Hero -->
+    <section class="hero fade-in" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="title">              
+        قال النبي ﷺ:
+      </h1>
+      <p>
+          “إذا مات ابنُ آدمَ انقطع عملُهُ إلا من ثلاثٍ: صدقةٍ جاريةٍ، أو علمٍ يُنتفَعُ به، أو ولدٍ صالحٍ يدعو له
+      </p>
+
+      <div class="cta" role="group" aria-label="Call to action">
+        <a href="#features" class="btn btn-primary">إقرأ المزيد</a>
+        <a href="#contact" class="btn btn-ghost">  متخافش إضغطني </a>
+      </div>
+
+      <!-- small quick stats -->
+      <div style="margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;z-index:1;position:relative;">
+        <div style="text-align:center;">
+          <div style="font-weight:700;font-size:1.2rem">1.2k+</div>
+          <div class="text-muted">Users</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-weight:700;font-size:1.2rem">24</div>
+          <div class="text-muted">Features</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-weight:700;font-size:1.2rem">99%</div>
+          <div class="text-muted">Uptime</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features grid -->
+    <section id="features" class="grid" aria-label="Features">
+      <div class="card fade-in delay-1" role="article">
+        <h3>بسم الله الرحمن الرحيم</h3>
+        <p>﴿إِنَّ رَحْمَتَ اللَّهِ قَرِيبٌ مِّنَ الْمُحْسِنِينَ﴾</p>
+      </div>
+
+      <div class="card fade-in delay-2" role="article">
+        <h3>بسم الله الرحمن الرحيم</h3>
+        <p>﴿وَلَا يَحْزُنكَ قَوْلُهُمْ ۘ إِنَّ الْعِزَّةَ لِلَّهِ جَمِيعًا﴾</p>
+      </div>
+
+      <div class="card fade-in delay-3" role="article">
+        <h3>بسم الله الرحمن الرحيم</h3>
+        <p>) وَلَا يَحْزُنكَ الَّذِينَ يُسَارِعُونَ فِي الْكُفْرِ(</p>
+      </div>
+    </section>
+
+    <!-- Spotlight section -->
+    <section class="hero fade-in" aria-labelledby="spotlight-title" style="margin-top:10px;">
+      <h2 id="spotlight-title" class="title">   من هو صانع هذا الموقع ؟  </h2>
+      <p class="text-muted" style="max-width:800px;margin:12px auto 0;">
+        الشاب عبد الرؤوف جعله صدقة عليه وعلى النية الطيبة لكل من سيدخل ويشارك ،كن عبد لله ولا تكن للشيطان ملاذا
+      </p>
+    </section>
+
+    <!-- Testimonials / cards row -->
+    <section class="grid" aria-label="Testimonials">
+      <div class="card fade-in delay-1">
+        <h3>دعاء السفر</h3>
+        <p class="text-muted">
+          اللَّهُمَّ هوِّن علينا سفرنا هذا واطوِ عنا بُعده، اللَّهُمَّ أنت الصاحب في السفر والخليفة في الأهل
+        </p>
+      </div>
+
+      <div class="card fade-in delay-2">
+        <h3>دعاء الفراق</h3>
+        <p class="text-muted">
+          اللَّهُمَّ اجمع بيني وبين من أحببتُ على خير، وإن كان في الفراق خيرٌ لنا فاجعل فيه بركةً وصبرًا ورضًا بقضائك. اللَّهُمَّ اربط على قلبي، ولا تجعل للحنين ما يُضعف إيماني، واملأ فراغي بذكرك وطمأنينتك.
+        </p>
+      </div>
+
+      <div class="card fade-in delay-3">
+        <h3>دعاء الظلم</h3>
+        <p class="text-muted">
+          اللَّهُمَّ إني مغلوبٌ فانتصر، اللَّهُمَّ عليك بالظالمين فإنهم لا يعجزونك، اللهم أرنا فيهم قدرتك وعدلك.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA / Sign-up style -->
+    <section class="hero fade-in" style="text-align:center;">
+      <h2 class="title">!  راك حايب تشارك فالصدقة الجارية </h2>
+      <p class="text-muted">كن أول من يقرأ</p>
+      <div class="cta" style="justify-content:center;">
+        <a class="btn btn-primary" href="#">كن أول من يقرأ</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== BEGIN: Simple Music Player ====== -->
+  <section class="player fade-in" style="max-width:360px;margin:30px auto;">
+    <style>
+      .player { background:#fd1515;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12);text-align:center;font-family:inherit; }
+      .player h3{margin:0 0 8px;font-size:18px}
+      .player .controls button{margin:6px;padding:8px 14px;border-radius:8px;border:none;cursor:pointer;background:#0b8457;color:#fff}
+      .player .controls button.pause{background:#f0a500}
+      .player .song-list button{margin:6px;padding:6px 10px;border-radius:8px;border:1px solid #ddd;background:transparent;cursor:pointer}
+      .player .small{font-size:12px;color:#666;margin-top:8px}
+    </style>
+
+    <audio id="siteAudio" loop>
+      <source src="qoran.mp3" type="audio/wav">
+    </audio>
+
+    <h3>you look tired listen to this</h3>
+
+    <audio id="siteAudio" preload="none">
+      <source src="qoran.mp3" type="audio/wav">
+      <source src="song1.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+
+    <div class="controls" style="margin-top:10px;">
+      <button onclick="playAudio()">▶️ Play</button>
+      <button class="pause" onclick="pauseAudio()">⏸️ Pause</button>
+    </div>
+
+    <div class="song-list" style="margin-top:10px;"></div>
+    <div class="small"></div>
+  </section>
+
+  <script>
+    (function(){
+      var audio = document.getElementById('siteAudio');
+      window.playAudio = function(){ audio.play().catch(()=>{}); }
+      window.pauseAudio = function(){ audio.pause(); }
+      window.stopAudio = function(){ audio.pause(); audio.currentTime = 0; }
+      window.loadSong = function(file){
+        audio.src = file;
+        audio.load();
+        audio.play().catch(()=>{});
+      }
+    })();
+
+    function searchSite() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let elements = document.body.getElementsByTagName("*");
+      let found = false;
+
+      for (let i = 0; i < elements.length; i++) {
+        let el = elements[i];
+        if (el.innerText && el.innerText.toLowerCase().includes(input) && input !== "") {
+          el.scrollIntoView({behavior:"smooth", block:"center"});
+          el.style.backgroundColor = "#ffff00"; // highlight
+          setTimeout(()=>{el.style.backgroundColor="";},2000);
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        alert("⛔  ستفتش عنها يا ولدي في كل مكان  ");
+      }
+    }
+  </script>
+  <!-- ====== END: Simple Music Player ====== -->
+
+          
+
+<!-- ====== Fullscreen Welcome Message ====== -->
+<div id="welcomeScreen" style="
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.95);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 9999;
+  flex-direction: column;
+">
+  <p>🌟 مرحبا بك في صدقة جارية 🌟</p>
+  <button onclick="closeWelcome()" style="
+    margin-top: 20px;
+    padding: 10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#0b8457;
+    color:#fff;
+    font-size:1rem;
+    cursor:pointer;
+  ">         بلا توسويس أدخل
+</button>
+</div>
+
+<script>
+function closeWelcome() {
+  document.getElementById('welcomeScreen').style.display = 'none';
+}
+</script>
+
+
+
+
+
+  <footer id="contact" class="fade-in">
+    <div class="container center">
+      <p class="text-muted" style="margin-bottom:8px;">Contact</p>
+      <p style="margin-bottom:8px;">Email: <a href="mailto:example@example.com" style="color:var(--accent)"> kingdomu628@gmail.com </a></p>
+      <p class="text-muted">© 2025 Raouf.mn</p>
+    </div>
+  </footer>
+
+  <!-- small accessibility: skip-to-content (optional) -->
+  <a href="#content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+
+    
+
+<div id="toast" style="visibility:hidden; min-width:250px; margin-left:-125px; background-color:#333; 
+color:#fff; text-align:center; border-radius:8px; padding:16px; position:fixed; z-index:9999; 
+left:50%; bottom:30px; font-size:17px;">
+  🎉                                       
+ادعولي نتزوج لي نحبها 😂😂😂       
+</div>
+<script>
+  window.onload = function() {
+    var x = document.getElementById("toast");
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+    x.style.transition = "opacity 0.1s linear";
+    setTimeout(function(){ 
+      x.style.opacity = "0";
+      x.style.visibility = "hidden";
+    }, 3000);
+  };
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
