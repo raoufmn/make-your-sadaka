@@ -16,6 +16,7 @@
   <header>
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
+
         <div class="logo" aria-hidden="false">
           <span class="dot" aria-hidden="true"></span>
            صدقة جارية لأشخاص
@@ -136,10 +137,10 @@
   <!-- ====== BEGIN: Simple Music Player ====== -->
   <section class="player fade-in" style="max-width:360px;margin:30px auto;">
     <style>
-      .player { background:#fd1515;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12);text-align:center;font-family:inherit; }
+      .player { background:#0001005b;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12);text-align:center;font-family:inherit; }
       .player h3{margin:0 0 8px;font-size:18px}
       .player .controls button{margin:6px;padding:8px 14px;border-radius:8px;border:none;cursor:pointer;background:#0b8457;color:#fff}
-      .player .controls button.pause{background:#f0a500}
+      .player .controls button.pause{background:#aff302}
       .player .song-list button{margin:6px;padding:6px 10px;border-radius:8px;border:1px solid #ddd;background:transparent;cursor:pointer}
       .player .small{font-size:12px;color:#666;margin-top:8px}
     </style>
@@ -148,7 +149,7 @@
       <source src="qoran.mp3" type="audio/wav">
     </audio>
 
-    <h3>you look tired listen to this</h3>
+    <h3>      ❤️  كنت كيفك مقلق حتى سمعت هدا الصوت                   </h3>
 
     <audio id="siteAudio" preload="none">
       <source src="qoran.mp3" type="audio/wav">
@@ -255,11 +256,11 @@ function closeWelcome() {
 
     
 
-<div id="toast" style="visibility:hidden; min-width:250px; margin-left:-125px; background-color:#333; 
+<div id="toast" style="visibility:hidden; min-width:250px; margin-left:-125px; background-color:#de09097c; 
 color:#fff; text-align:center; border-radius:8px; padding:16px; position:fixed; z-index:9999; 
 left:50%; bottom:30px; font-size:17px;">
-  🎉                                       
-ادعولي نتزوج لي نحبها 😂😂😂       
+                                         
+                            خطيك متربح والو متدخلش:👹                 
 </div>
 <script>
   window.onload = function() {
@@ -323,6 +324,73 @@ left:50%; bottom:30px; font-size:17px;">
 <!-- ====== END Auto Refresh ====== -->
 
 
+<style id="siteClockStyles">
+  /* clock container (fixed above the header) */
+  #siteClock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 132, 88, 0); /* adjustable color */
+    color: #fff;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    z-index: 99999;
+    transition: transform .25s ease, opacity .25s ease;
+  }
+
+  /* small on very small screens */
+  @media (max-width:420px){
+    #siteClock { font-size: 14px; height: 36px; padding:0 8px; }
+  }
+</style>
+
+<div id="siteClock" aria-hidden="false">--:--:--</div>
+
+<script>
+(function(){
+  // create clock element if missing (safety)
+  var clock = document.getElementById('siteClock');
+  if (!clock) {
+    clock = document.createElement('div');
+    clock.id = 'siteClock';
+    document.body.insertBefore(clock, document.body.firstChild);
+  }
+
+  // update body padding-top so the clock doesn't cover header
+  function adjustBodyPadding() {
+    var h = clock.getBoundingClientRect().height || 38;
+    // only increase padding if current paddingTop is smaller
+    var current = parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
+    if (current < h) document.body.style.paddingTop = h + 'px';
+  }
+
+  // time updater
+  function updateClock() {
+    var now = new Date();
+    var h = String(now.getHours()).padStart(2,'0');
+    var m = String(now.getMinutes()).padStart(2,'0');
+    var s = String(now.getSeconds()).padStart(2,'0');
+    clock.textContent = h + ':' + m + ':' + s;
+  }
+
+  // init
+  updateClock();
+  adjustBodyPadding();
+  // update every second
+  setInterval(updateClock, 1000);
+
+  // re-adjust on resize/orientation change (mobile)
+  window.addEventListener('resize', adjustBodyPadding);
+  window.addEventListener('orientationchange', function(){
+    setTimeout(adjustBodyPadding, 300);
+  });
+})();
+</script>
 
 
 

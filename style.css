@@ -26,7 +26,7 @@ body{
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  background: url("yy.jpg") no-repeat center center fixed;
+  background: url("mi.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow-x:hidden;
   line-height:1.5;
@@ -459,7 +459,7 @@ footer {
 }
 /* Default background (PC / Desktop) */
 body {
-  background-image: url('yy.jpg');
+  background-image: url('mi.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -479,3 +479,18 @@ body {
   }
 }
 
+
+/* هذا هو الأساس للـ navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* اللوجو فاليسار واللينكات فاليمين */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* في الموبايل */
+@media (max-width: 768px) {
+  .nav-links {
+    margin-left: 38px;   /* تدي اللينكات لليمين */
+  }
+}
